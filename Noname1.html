@@ -94,6 +94,19 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+  /* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 </style>
 </head>
@@ -153,7 +166,13 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(6)"></span> 
 
 </div>
+  
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
 
+  
 <script>
 let slideIndex = 1;
 showSlides(slideIndex);
