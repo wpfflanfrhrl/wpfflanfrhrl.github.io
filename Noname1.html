@@ -106,9 +106,9 @@ img {vertical-align: middle;}
 
 /* Container for image text */
 .button {
-  background-color: #ddd;
+  background-color: rgba(0,0,0,0.2);
   border: none;
-  color: black;
+  color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -116,6 +116,7 @@ img {vertical-align: middle;}
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
+  transition: background-color 0.6s ease;
 }
     
 .caption-container {
@@ -186,8 +187,12 @@ img {vertical-align: middle;}
   
   <!-- Image text -->
   <div class="caption-container">
-    <p id="caption"></p>
-  <button class="button"><a href="https://corexmsm79m8drz8k3sj.qualtrics.com/jfe/form/SV_72OAfKZVCkBdrKK">설문으로 돌아가기</a></button>
+    <div style="padding:0px,0px,10px,0px">
+      <p id="caption"></p>
+      <button class="button">
+          <a href="https://corexmsm79m8drz8k3sj.qualtrics.com/jfe/form/SV_72OAfKZVCkBdrKK">설문으로 돌아가기</a>
+      </button>
+    </div>
   </div>
 
   
